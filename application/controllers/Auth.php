@@ -8,7 +8,7 @@ class Auth extends CI_Controller {
 
 	public function cek_login() {
 		$data = array('username' => $this->input->post('username', TRUE),
-						'password' => md5($this->input->post('password', TRUE))
+						'password' => $this->input->post('password', TRUE)
 			);
 		$this->load->model('model_user'); // load model_user
 		$hasil = $this->model_user->cek_user($data);
@@ -32,6 +32,11 @@ class Auth extends CI_Controller {
 		else {
 			echo "<script>alert('Gagal login: Cek username, password!');history.go(-1);</script>";
 		}
+	}
+
+	public function logout(){
+		$this->session->sess_destroy();
+		redirect('','refresh');
 	}
 
 
