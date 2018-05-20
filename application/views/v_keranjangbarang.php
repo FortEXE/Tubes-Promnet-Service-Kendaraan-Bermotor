@@ -1,0 +1,1 @@
+<a href="<?= site_url('controller_utama/pembelian') ?>" title=""> Bayar</a>

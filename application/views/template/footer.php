@@ -1,5 +1,5 @@
 <hr>
-<span><h5>copyright AK-18</h5>
+<span><h5>copyright AK-18, RusiawanCoolz</h5>
 <h6>&copy; 2018</h6></span>
 </div>
 
@@ -25,11 +25,14 @@
 
 <script>
   $(document).ready(function(){
-    $("#search").on("keyup", function() {
-      var value = $(this).val().toLowerCase();
-      $("#v_table tr").filter(function() {
-        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-      });
+    $("#search").on("keyup", function(e) {
+
+      if(e.keyCode == 13){
+        var value = $(this).val().toLowerCase();
+        $("#v_table tr").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      }
     });
   });
 </script>
