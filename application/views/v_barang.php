@@ -1,7 +1,9 @@
-<input class="form-control col-lg-3" id="search" type="text" placeholder="Search..">
-<table>
+<center><input class="form-control col-lg-3" id="search" type="text" placeholder="Search.."></center>
+<br>
+<br>
+<table align='center'>
 	<thead>
-		<tr>
+		<tr align='center'>
 			<th>nomor</th>
 			<th>id barang</th>
 			<th>nama barang</th>
@@ -25,4 +27,6 @@
 
 	</tbody>
 </table>
+		<center>
 		<?= $this->pagination->create_links(); ?>
+		</center>

@@ -1,5 +1,5 @@
 <hr>
-<span><h5>copyright AK-18, RusiawanCoolz</h5>
+<span align='center'><h5>copyright AK-18, Izh</h5>
 <h6>&copy; 2018</h6></span>
 </div>
 

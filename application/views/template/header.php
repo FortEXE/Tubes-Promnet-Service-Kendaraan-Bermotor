@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title><?= $page_title ?></title>
-		<link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/journal/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 	</head>
@@ -14,12 +14,15 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarColor03">
 				<ul class="navbar-nav mr-auto">
+				
 					<li class="nav-item">
 						<a class="nav-link" href="<?= site_url('controller_utama/home') ?>">Home <span class="sr-only">(current)</span></a>
 					</li>
+					
 					<li class="nav-item">
 						<a class="nav-link" href="<?= site_url('controller_utama/tentang') ?>">Tentang</a>
 					</li>
+					
 				</ul>
 
 				<a class="nav-link" href="<?= site_url('controller_utama/sesi'); ?>" title="">Cek Sesi</a>
@@ -32,7 +35,6 @@
 		</nav>
 		<hr>
 		
-		<div class="container">
-			<h2><?= $page_title ?></h2>
-				<br>
-				<br>
+		
+		
+		

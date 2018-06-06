@@ -1,14 +1,18 @@
-<input class="form-control col-lg-3" id="search" type="text" placeholder="Search..">
-<table>
-	<thead>
+<center><input class="form-control col-lg-3" id="search" type="text" placeholder="Search.."></center>
+<br>
+<br>
+<table align='center'>
+	<thead align='center'>
 		<tr>
-			<th>nomor</th>
+			<th>Nomor</th>
 			<th>id jasa</th>
-			<th>nama jasa</th>
-			<th>kategori jasa</th>
-			<th>harga jasa</th>
+			<th>Nama Jasa</th>
+			<th>Kategori Jasa</th>
+			<th>Harga Jasa</th>
 		</tr>
+		
 	</thead>
+	
 	<tbody id="v_table" class="table">
 		<?php $i=1;
 		foreach ($jasa as $value): ?>
